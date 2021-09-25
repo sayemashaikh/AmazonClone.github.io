@@ -1,10 +1,30 @@
-import React from "react";
-import './Home.css'
+//Home.js
+import React from 'react';
+import './Home.css';
+import Product from './Product';
 
 function Home() {
     return (
         <div className="home">
-           <img className="home__image" src="https://m.media-amazon.com/images/I/61rJibjYA8L._SX1500_.jpg" alt=""/>    
+          <div className="home--container">
+            <img className="home--image" src="https://m.media-amazon.com/images/I/71UhgZQzskL._SX3000_.jpg" alt="" />
+
+            <div className="home--row">
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            </div>
+            <div className="home--row">
+            <Product />
+            <Product />
+            </div>
+            <div className="home--row">
+            <Product />
+            </div>
+
+          </div>  
         </div>
     )
 }
